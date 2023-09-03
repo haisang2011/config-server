@@ -1,0 +1,30 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/springlearningprofessional
+    username: root
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+  flyway:
+    enabled: true
+  messages:
+    basename: messages
+eureka:
+  instance:
+    client:
+      serverUrl:
+        defaultZone: http://localhost:8761/eureka/
+info:
+  app:
+    name: Spring Boot Restful Web Services
+    description: Spring Boot Restful Web Services Demo
+    version: 1.0.0
+#springdoc:
+#  swagger-ui:
+#    path: /swagger-ui.html
+#    enabled: true

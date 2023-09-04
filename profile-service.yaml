@@ -14,6 +14,8 @@ spring:
     enabled: true
   messages:
     basename: messages
+  message:
+    hello: Hello, My name is Profile Service
 #management:
 #  info:
 #    env:
